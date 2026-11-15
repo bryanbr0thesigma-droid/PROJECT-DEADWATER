@@ -496,6 +496,16 @@ voice.
    test demo; the art is still gray-box.*
 6. **Online play, voice chat, more levels, polish.**
 
+## Ideas
+
+- **Be the monster (a game mode).** One player is the Wader; the others are divers. The Wader is
+  blind: its world is dark and it sees by sound, drawn like the lidar's dots. Every noise paints
+  dots where it was made (wading, hands in the water, a thrown bottle, the generator), and someone
+  falling in is a big splash it can't miss. It moves only through the water. A diver who holds
+  still makes no dots. The pieces exist already: the noise bus (every noise reaches the host), the
+  lidar dots, the creature's model, animations and kills. To decide: one Wader against three, how
+  it moves in VR, its charge (a cooldown?), and how a round ends.
+
 ## Open questions
 
 - Is there any story?
