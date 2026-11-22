@@ -1,12 +1,12 @@
-**RIPPLE** is a co-op VR horror game set in flooded poolrooms, for Meta Quest. Something called the Wader lives in the water and hunts by sound. This is a free demo build.
+**PROJECT: DEADWATER** is a co-op VR horror game set in flooded poolrooms, for Meta Quest. Something called the Wader lives in the water and hunts by sound. This is a free demo build.
 
 ### Install on a Quest
 1. In the Meta Horizon phone app, open your headset's settings and turn on **Developer mode** (needs a free Meta developer account).
-2. Download `RIPPLE-demo-{VERSION}.apk` below.
-3. Install it with [SideQuest](https://sidequestvr.com/) (drag the APK onto it), or with `adb install RIPPLE-demo-{VERSION}.apk`.
+2. Download `DEADWATER-demo-{VERSION}.apk` below.
+3. Install it with [SideQuest](https://sidequestvr.com/) (drag the APK onto it), or with `adb install DEADWATER-demo-{VERSION}.apk`.
 4. On the headset, open it from **Library**, under **Unknown sources**.
 
-If installing over an older RIPPLE build fails, uninstall the old one first.
+If installing over an older build fails, uninstall the old one first.
 
 ### Playing together (up to 4)
 - **Online, from anywhere:** one player picks **Play → Host online (room code)** and reads out the 6-character code that appears (it's also in the pause menu). Friends pick **Play → Join online with a code** and type it.

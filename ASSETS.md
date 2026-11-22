@@ -1,4 +1,4 @@
-# RIPPLE — Assets
+# PROJECT: DEADWATER — Assets
 
 Every asset must allow full commercial use and must not be AI-generated (see the
 Asset policy in `DESIGN.md`). Assets are reviewed with previews before they're
@@ -154,7 +154,7 @@ The user chose to keep Sam for now.
 | `game/assets/props/intro_side_table.glb` | The table the tape lies on | [Poly Haven, Side Table 01](https://polyhaven.com/a/side_table_01) | James Ray Cock | CC0 |
 | `game/assets/props/intro_vcr.glb` | The VCR | [Sketchfab, "VCR Player"](https://sketchfab.com/3d-models/98951dfd481b432b883b128222ea24ae) | twunnyphaiv | CC BY 4.0 |
 | `game/assets/props/intro_tape.glb` | The VHS tape | [Sketchfab, "VHS"](https://sketchfab.com/3d-models/c11a8596c3314677a8b9321e141de275) | Terizmeh | CC BY 4.0 |
-| `game/assets/intro/tape_label.png`, `tape_spine.png`, `tape_label_08.png`, `tape_spine_08.png` | The tapes' F.A.L.C.O.N. labels (07-W and 08-E) | made for RIPPLE on the `claude/wizardly-gates-b0selv` branch (`media/labels/`), with the falcon by papapishu (Openclipart, CC0) | — | CC0 parts |
+| `game/assets/intro/tape_label.png`, `tape_spine.png`, `tape_label_08.png`, `tape_spine_08.png` | The tapes' F.A.L.C.O.N. labels (07-W and 08-E) | made for PROJECT: DEADWATER on the `claude/wizardly-gates-b0selv` branch (`media/labels/`), with the falcon by papapishu (Openclipart, CC0) | — | CC0 parts |
 
 | `game/assets/intro/office/carpet_*` | The office carpet | [ambientCG, Carpet 012](https://ambientcg.com/view?id=Carpet012) | Lennart Demes | CC0 |
 | `game/assets/intro/office/wall_*` | The office wallpaper (tinted beige) | [ambientCG, Wallpaper 001 A](https://ambientcg.com/view?id=Wallpaper001A) | Lennart Demes | CC0 |
@@ -186,7 +186,7 @@ sign in the window).
 | `game/assets/props/lobby/ceiling_fan.glb` | The ceiling fan | [Poly Haven, Ceiling Fan](https://polyhaven.com/a/ceiling_fan) | Ulan Cabanilla | CC0 |
 | `game/assets/props/lobby/potted_plant_01.glb` | The plants | [Poly Haven, Potted Plant 01](https://polyhaven.com/a/potted_plant_01) | Rico Cilliers | CC0 |
 | `game/assets/props/lobby/potted_plant_04.glb`, `side_table_tall_01.glb`, `antique_ceramic_vase_01.glb` | The counter plant, the lamp table, the lamp's base | [Poly Haven](https://polyhaven.com/models) | James Ray Cock | CC0 |
-| `game/assets/audio/desk_bell.ogg` | The service bell's ding | synthesized for RIPPLE | — | ours |
+| `game/assets/audio/desk_bell.ogg` | The service bell's ding | synthesized for PROJECT: DEADWATER | — | ours |
 
 The leather armchair and the TV set are reused from the office. The counter, key board, cubbies,
 fireplace, soda machine, coffee station, brochure rack, window, blinds and the clock are made in the
@@ -194,17 +194,17 @@ game from simple shapes, and dressed with the station's art (below).
 
 ## Station art and brands
 
-Everything in `game/assets/branding/` (except the app icon and splash) is drawn by the scripts in
+Everything in `game/assets/branding/` is drawn by the scripts in
 `tools/branding/` (`python3 make.py <out_dir>`): the F.A.L.C.O.N. logos, Pinewater Field Station's
 signs, the pamphlets, posters and certificate, the visitors' book and the memo, the Training
 Division sign and room titles, the noise gauge, the Shallow Halls' warning signs, equipment plates,
-exit sign and plaque, the RIPPLE logo and the menu header. The lobby's knock-off brands are
+exit sign and plaque, the PROJECT: DEADWATER logo, the menu header, the boot splash and the app icon. The lobby's knock-off brands are
 deliberate parodies: Chlora-Cola (the soda machine), Floater's (the coffee can), Liminal Geographic
 (the magazines) and SORNY. No AI image model was used.
 
 Their sources and fonts are listed in `tools/branding/CREDITS.md`: public-domain clip art and ISO
 pictograms, OFL fonts, and the Wader's silhouette from the creature model, which carries its
-**CC BY 4.0** credit: "The Rake" by Sealife Fan 3, reworked for RIPPLE. Two magazine covers are
+**CC BY 4.0** credit: "The Rake" by Sealife Fan 3, reworked for PROJECT: DEADWATER. Two magazine covers are
 homages to the Backrooms' Level 0 and Level Run, rendered in the engine from the game's own
 textures (no Backrooms images are used).
 

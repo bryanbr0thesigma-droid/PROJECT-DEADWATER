@@ -875,7 +875,7 @@ func _apply_state(key: String) -> void:
 				Game.notify("Everyone escaped! Back to the title in a few seconds.")
 				get_tree().create_timer(8.0).timeout.connect(func():
 					if Game.level == self:
-						Game.go_to_menu("You escaped %s. Thanks for playing the RIPPLE demo." % Game.MAPS.get(Game.level_map, "the poolrooms").capitalize()))
+						Game.go_to_menu("You escaped %s. Thanks for playing the PROJECT: DEADWATER demo." % Game.MAPS.get(Game.level_map, "the poolrooms").capitalize()))
 
 
 ## Ask the host to do something to the world.

@@ -67,6 +67,7 @@ func _run() -> void:
 		return
 	if scenario == "menu_shot":
 		var out := str(Game.args.get("out", "user://"))
+		await wait_for(func(): return get_tree().current_scene != null and get_tree().current_scene.scene_file_path == Game.MENU_SCENE and not Game.fader.busy, 20.0)
 		await wait(2.0)
 		await RenderingServer.frame_post_draw
 		get_viewport().get_texture().get_image().save_png("%s/title_main.png" % out)

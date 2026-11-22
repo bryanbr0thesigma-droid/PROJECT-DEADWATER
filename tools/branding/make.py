@@ -22,7 +22,8 @@ SPEC = {
     **{f"sign_{k}": (512, 512, False) for k in ("no_diving", "no_running", "staff_only", "deep_water", "no_drinking")},
     **{f"label_{k}": (512, 256, False) for k in ("generator", "distiller", "charger", "cover")},
     "exit_sign": (512, 256, False), "halls_plaque": (1024, 640, False),
-    "ripple_logo": (2048, 1024, True), "menu_header": (1024, 256, True),
+    "title_logo": (2048, 1024, True), "menu_header": (1024, 256, True),
+    "splash": (1280, 720, False), "icon": (512, 512, False),
 }
 
 

@@ -139,7 +139,7 @@ func go_to_menu(reason := "") -> void:
 
 func notify(text: String) -> void:
 	message.emit(text)
-	print("[RIPPLE] ", text)
+	print("[DEADWATER] ", text)
 
 
 func _on_session_ended(reason: String) -> void:

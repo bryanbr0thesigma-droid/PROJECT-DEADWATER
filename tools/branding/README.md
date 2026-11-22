@@ -1,4 +1,4 @@
-# RIPPLE branding
+# PROJECT: DEADWATER branding
 
 The art asked for in `docs/BRANDING_REQUESTS.txt` (on the `claude/admiring-ride-o5042e` branch): 50
 PNGs for the lobby, the training annex, the Shallow Halls and the title screen, at the sizes asked
@@ -43,7 +43,7 @@ game's materials and two textures drawn for it, then deleted.
   memo, door decal, neon, clock face and rug.
 - `covers/`: the three engine stills used on the magazine covers.
 - `facility.py`: PARTS 3 to 5, the training sign template, room titles, noise meter, warning
-  signs, equipment plates, exit sign, the Shallow Halls plaque, the RIPPLE logo and the menu header.
+  signs, equipment plates, exit sign, the Shallow Halls plaque, the PROJECT: DEADWATER logo, the menu header, the boot splash (`splash.png`) and the app icon (`icon.png`).
 
 The warning signs are `sign_no_diving`, `sign_no_running`, `sign_staff_only`, `sign_deep_water`
 and `sign_no_drinking` ("Do not drink the water", from the tape). The room titles are

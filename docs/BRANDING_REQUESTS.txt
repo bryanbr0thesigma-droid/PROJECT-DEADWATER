@@ -1,4 +1,4 @@
-RIPPLE - ART AND BRANDING REQUESTS
+PROJECT: DEADWATER - ART AND BRANDING REQUESTS
 ==================================
 
 Everything below is art I can drop straight into the game. Nothing here is required to play;
@@ -177,8 +177,8 @@ S4. LEVEL NAME PLAQUE                          [halls_plaque.png]  1024 x 640, s
 PART 5 - TITLE SCREEN AND MENU (optional)
 ================================================================================================
 
-M1. GAME LOGO                                  [ripple_logo.png]  2048 x 1024, transparent
-    The RIPPLE title logo for the title screen (it is plain text now).
+M1. GAME LOGO                                  [title_logo.png]   2048 x 1024, transparent
+    The PROJECT: DEADWATER title logo for the title screen (it is plain text now).
 
 M2. MENU PANEL HEADER                          [menu_header.png]  1024 x 256, transparent
     A header strip for the menu panel (could carry the F.A.L.C.O.N. seal, as if the menu were

@@ -23,7 +23,7 @@ const BROKERS := [
 	{"kind": "mqtt", "url": "wss://test.mosquitto.org:8081/mqtt"},
 ]
 const ALPHABET := "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"   # no I, O, 0 or 1: easy to read out
-const TOPIC := "rippledemo/v1/"
+const TOPIC := "deadwater/v1/"
 # STUN finds each player's public address so the games can connect straight to each other. When
 # both networks are too strict for that, a TURN relay passes the game traffic between them instead
 # (WebRTC only falls back to it when a direct connection fails). The relay's login isn't kept in

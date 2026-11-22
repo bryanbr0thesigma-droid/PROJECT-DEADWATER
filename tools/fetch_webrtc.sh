@@ -1,7 +1,7 @@
 #!/bin/sh
 # Downloads Godot's WebRTC extension (webrtc-native, MIT; bundles libdatachannel/libjuice under
 # MPL-2.0, usrsctp/libsrtp BSD, mbedtls Apache-2.0) into game/webrtc/, keeping only the builds
-# RIPPLE ships: Quest (Android arm64) and desktop Linux/Windows x86_64. Online co-op needs it.
+# PROJECT: DEADWATER ships: Quest (Android arm64) and desktop Linux/Windows x86_64. Online co-op needs it.
 #   sh tools/fetch_webrtc.sh
 set -e
 VERSION=1.1.1-stable

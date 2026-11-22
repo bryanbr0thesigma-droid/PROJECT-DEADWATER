@@ -82,9 +82,9 @@ jobs:
             echo "$KS_B64" | base64 -d > "$RUNNER_TEMP/release.keystore"
             user="$KS_USER"; pass="$KS_PASS"
           else
-            user=ripple; pass="$(openssl rand -hex 16)"
+            user=deadwater; pass="$(openssl rand -hex 16)"
             keytool -genkeypair -keystore "$RUNNER_TEMP/release.keystore" -alias "$user" -keyalg RSA -keysize 2048 \
-              -validity 10000 -storepass "$pass" -keypass "$pass" -dname "CN=RIPPLE demo" > /dev/null
+              -validity 10000 -storepass "$pass" -keypass "$pass" -dname "CN=PROJECT DEADWATER demo" > /dev/null
           fi
           echo "::add-mask::$pass"
           {
@@ -99,20 +99,20 @@ jobs:
           echo "VERSION=$VERSION" >> "$GITHUB_ENV"
           mkdir -p build
           godot --headless --path game --install-android-build-template \
-            --export-release "Quest" "$GITHUB_WORKSPACE/build/RIPPLE-demo-$VERSION.apk" > export.log 2>&1 || true
+            --export-release "Quest" "$GITHUB_WORKSPACE/build/DEADWATER-demo-$VERSION.apk" > export.log 2>&1 || true
           grep -vE "OpenXR|xrEnumerate|HMD|Godot will start" export.log | tail -60 || true
           ls -la build
-          test "$(stat -c %s "build/RIPPLE-demo-$VERSION.apk")" -gt 50000000
+          test "$(stat -c %s "build/DEADWATER-demo-$VERSION.apk")" -gt 50000000
 
       - name: Publish the release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           sed "s/{VERSION}/$VERSION/g" .github/release-notes.md > "$RUNNER_TEMP/notes.md"
-          apk="build/RIPPLE-demo-$VERSION.apk"
+          apk="build/DEADWATER-demo-$VERSION.apk"
           if gh release view "v$VERSION" > /dev/null 2>&1; then
             gh release upload "v$VERSION" "$apk" --clobber
           else
             gh release create "v$VERSION" "$apk" --target "$GITHUB_SHA" \
-              --title "RIPPLE demo $VERSION" --notes-file "$RUNNER_TEMP/notes.md" --latest
+              --title "PROJECT: DEADWATER demo $VERSION" --notes-file "$RUNNER_TEMP/notes.md" --latest
           fi

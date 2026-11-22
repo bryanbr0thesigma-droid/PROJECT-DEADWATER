@@ -1,4 +1,4 @@
-# RIPPLE — Design Doc
+# PROJECT: DEADWATER — Design Doc
 
 ## Pitch
 
@@ -19,7 +19,7 @@ Something lives in it, and it hunts by sound. If you fall in, it's coming.
 
 ## Identity
 
-What makes RIPPLE its own game:
+What makes PROJECT: DEADWATER its own game:
 - A creature that only hears the water, and ripples that show exactly what it hears
 - Horror platforming, where the danger is falling in
 - Dark sections where a lidar scanner is the only way to see
@@ -27,11 +27,11 @@ What makes RIPPLE its own game:
   spilling, so progress is always a risk
 
 The poolrooms are a well-known liminal space, and other co-op VR horror games use
-similar spaces. RIPPLE uses its own version of the poolrooms, with no level numbers,
+similar spaces. PROJECT: DEADWATER uses its own version of the poolrooms, with no level numbers,
 established lore or terms from those games. The mechanics carry the identity.
 
-RIPPLE is also inspired by an existing poolrooms game with a creature that hears the
-water. RIPPLE needs its own visual style and its own taglines and wall text, not
+PROJECT: DEADWATER is also inspired by an existing poolrooms game with a creature that hears the
+water. PROJECT: DEADWATER needs its own visual style and its own taglines and wall text, not
 borrowed ones. The creature will be a ready-made model, so it should be retextured or
 changed enough that it doesn't look like the inspiration game's creature or a stock
 download.
@@ -126,7 +126,7 @@ The creature is called **the Wader**: a tall, pale thing that wades the pools up
 by sound.
 
 Built from the ready-made [The Rake](https://sketchfab.com/3d-models/the-rake-92898b04b24e4315b0673fcfe307f64e)
-by Sealife Fan 3 (CC BY), reworked into RIPPLE's own "drowned" creature:
+by Sealife Fan 3 (CC BY), reworked into PROJECT: DEADWATER's own "drowned" creature:
 
 - **Dark, wet, realistic skin:** near-black creases, lighter ridges and an oily
   sheen, with pores and wrinkles taken from photographed leather
@@ -509,7 +509,7 @@ voice.
 ## Open questions
 
 - Is there any story?
-- What's RIPPLE's own visual style (colors, lighting), so it doesn't share the
+- What's PROJECT: DEADWATER's own visual style (colors, lighting), so it doesn't share the
   inspiration game's look?
 - Which online relay or matchmaking service?
 - Which voice chat solution?

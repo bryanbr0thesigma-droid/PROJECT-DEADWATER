@@ -45,7 +45,7 @@ jobs:
             --audio-driver Dummy --resolution 960x540 --max-fps 20 -- --desktop --join-code="$CODE" \
             --name="Claude" --snapshot="$snap" > ../client.log 2>&1 || true) &
           pid=$!
-          (set +e +o pipefail; tail -n +1 -F ../client.log 2>/dev/null | grep --line-buffered -E "\[ONLINE\]|\[RIPPLE\]|\[SNAP\]" | while read -r line; do
+          (set +e +o pipefail; tail -n +1 -F ../client.log 2>/dev/null | grep --line-buffered -E "\[ONLINE\]|\[DEADWATER\]|\[SNAP\]" | while read -r line; do
             echo "$line"; curl -s -o /dev/null -d "$line" "$STATUS"
           done) &
           # Pictures: by itself 15 s after connecting and then every 45 s (4 in all), or on request.

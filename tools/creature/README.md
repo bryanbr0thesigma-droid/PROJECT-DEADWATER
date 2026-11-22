@@ -1,6 +1,6 @@
 # Creature build
 
-Builds the RIPPLE creature from two CC BY models: the body and limbs of
+Builds the PROJECT: DEADWATER creature from two CC BY models: the body and limbs of
 [The Rake](https://sketchfab.com/3d-models/the-rake-92898b04b24e4315b0673fcfe307f64e) by Sealife Fan 3,
 and the head and tail of
 [Four Legged Predator](https://sketchfab.com/3d-models/four-legged-predator-7f68f9daa698433299092bfecaae4e9e)

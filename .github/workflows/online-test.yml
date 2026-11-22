@@ -40,5 +40,5 @@ jobs:
           echo "room code: $code"
           timeout 300 godot --headless --path . -- --desktop --join-code=$code $sig --autotest=net_client > ../client.log 2>&1; echo $? > ../client.exit
           wait
-          grep -hE "^PASS|^FAIL|AUTOTEST done|RIPPLE\]" ../host.log ../client.log
+          grep -hE "^PASS|^FAIL|AUTOTEST done|DEADWATER\]" ../host.log ../client.log
           test "$(cat ../host.exit)" = 0 && test "$(cat ../client.exit)" = 0

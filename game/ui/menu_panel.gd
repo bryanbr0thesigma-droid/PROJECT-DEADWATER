@@ -88,7 +88,7 @@ func _build_main(parent: Control) -> void:
 	header.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	header.custom_minimum_size = Vector2(0, 112)
 	p.add_child(header)
-	p.add_child(_label("RIPPLE  ·  Demo: The Shallow Halls", 22, DIM))
+	p.add_child(_label("PROJECT: DEADWATER  ·  Demo", 22, DIM))
 	p.add_child(_spacer(18))
 	p.add_child(_button("Play", func(): show_page("play"), 30))
 	p.add_child(_button("Character", func(): show_page("character"), 30))

@@ -70,7 +70,7 @@ The squeeze flashlight's whir and click were synthesized for this project. The t
 
 ## Music
 
-Both tracks were made for RIPPLE by slowing these CC0 tracks from OpenGameArt down with a
+Both tracks were made for PROJECT: DEADWATER by slowing these CC0 tracks from OpenGameArt down with a
 spectral stretch (`tools/sound/mix_music.py`):
 
 - Title screen, **Melted piano**: [At the End of Hope](https://opengameart.org/content/at-the-end-of-hope) by Emma_MA.

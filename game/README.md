@@ -1,6 +1,6 @@
-# RIPPLE: demo
+# PROJECT: DEADWATER (demo)
 
-A co-op VR demo of RIPPLE: a title screen, a character selector (three suits, your color, your
+A co-op VR demo of PROJECT: DEADWATER: a title screen, a character selector (three suits, your color, your
 name), and one level, The Shallow Halls, with every core mechanic. Up to 4 players, on Quest
 headsets or PCs, with or without VR. Built in Godot 4.7.2 with Godot XR Tools.
 
@@ -10,13 +10,13 @@ headsets or PCs, with or without VR. Built in Godot 4.7.2 with Godot XR Tools.
 
 1. Turn on **Developer Mode** for your headset in the Meta Horizon phone app (Devices, your
    headset, Developer Mode). This needs a free Meta developer account.
-2. Install `ripple-demo.apk` with one of these:
+2. Download the APK from the repo's Releases page (`DEADWATER-demo-<version>.apk`) and install it with one of these:
    - [Meta Quest Developer Hub](https://developers.meta.com/horizon/documentation/android-apps/meta-quest-developer-hub/):
      plug the headset in with USB, then drag the APK onto the device page.
    - [SideQuest](https://sidequestvr.com/): plug in, then drag the APK onto the SideQuest window.
-   - Or from a terminal: `adb install -r ripple-demo.apk`
+   - Or from a terminal: `adb install -r DEADWATER-demo-<version>.apk`
 3. In the headset, open **Library**, choose **Unknown Sources** in the filter menu, and start
-   **RIPPLE Demo**.
+   **PROJECT: DEADWATER Demo** (builds up to 0.9.6 are called **RIPPLE Demo**).
 
 Your friend does the same on their Quest. Then, from anywhere: one of you picks **Play, Host online
 (room code)** and reads out the 6-character room code (it pops up in the game and stays in the pause

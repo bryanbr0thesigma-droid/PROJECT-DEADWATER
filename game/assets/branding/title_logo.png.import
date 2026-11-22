@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxnhslxy7jppx"
-path="res://.godot/imported/ripple_logo.png-0013645a4062169020b76c487521ec8b.ctex"
+uid="uid://bm3t02dfimnu2"
+path="res://.godot/imported/title_logo.png-435cd14c91e3e01e0ab8a9249f1bb14a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/branding/ripple_logo.png"
-dest_files=["res://.godot/imported/ripple_logo.png-0013645a4062169020b76c487521ec8b.ctex"]
+source_file="res://assets/branding/title_logo.png"
+dest_files=["res://.godot/imported/title_logo.png-435cd14c91e3e01e0ab8a9249f1bb14a.ctex"]
 
 [params]
 
@@ -23,7 +23,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""

@@ -1,4 +1,4 @@
-# Shared drawing kit for RIPPLE's in-game branding: the F.A.L.C.O.N. house colours, fonts, paper
+# Shared drawing kit for PROJECT: DEADWATER's in-game branding: the F.A.L.C.O.N. house colours, fonts, paper
 # and print textures, the seal, safety-sign shapes and pictograms. Every image is drawn at twice
 # its final size and shrunk on save, for smooth edges.
 #

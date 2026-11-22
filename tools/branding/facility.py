@@ -1,6 +1,6 @@
 # PARTS 3 to 5 of the branding requests: the training annex (sign template, room titles, the noise
 # meter), the Shallow Halls (warning signs, equipment plates, the exit sign, the level plaque) and
-# the title screen (the RIPPLE logo and the menu header).
+# the title screen (the PROJECT: DEADWATER logo, the menu header, the boot splash and the app icon).
 import math
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageChops
@@ -264,44 +264,77 @@ def halls_plaque(out):
 
 
 # ---------------------------------------------------------------- title screen and menu
-def ripple_logo(out):
-    W, H = 2048, 1024
-    im, d = new(W, H)
-    pale = (232, 240, 238)
-    cyan = (120, 210, 226)
-    wl = 640
-    # rings spreading out on the water
-    rings = Image.new("RGBA", im.size, (0, 0, 0, 0))
-    rd = ImageDraw.Draw(rings)
-    for i in range(7):
-        rx = 220 + i * 150
-        a = int(200 * (1 - i / 7) ** 1.3)
-        ellipse(rd, W / 2, wl + 40, rx, rx * 0.13, outline=cyan + (a,), width=6 - i * 0.6)
-    im.alpha_composite(rings)
-    fnt = fit("black", "RIPPLE", W - 420, 480, 40)
-    m = text_mask("RIPPLE", fnt, 40)
-    tw, th = m.size
-    x0 = int(W / 2 * SS - tw / 2)
-    y0 = int(wl * SS - th - 8 * SS)
-    letters = tint(m, pale)
-    im.alpha_composite(letters, (x0, y0))
-    # the reflection: flipped, rippled sideways more the deeper it goes, fading out
-    ref = m.transpose(Image.FLIP_TOP_BOTTOM)
-    arr = np.asarray(ref, float)
+PALE = (226, 236, 232)
+CYAN = (120, 210, 226)
+DEEP_BG = (3, 8, 10)           # the boot splash colour in project.godot
+
+
+PAD_R = 12 * SS
+
+
+def _still_reflection(mask, wave=1.0, fade=1.6, strength=0.5):
+    """A mask flipped as if in very still water: barely rippled, fading with depth, with thin gaps."""
+    arr = np.asarray(mask.transpose(Image.FLIP_TOP_BOTTOM), float)
+    arr = np.pad(arr, ((0, 0), (PAD_R, PAD_R)))      # room to sway without wrapping round
     out_a = np.zeros_like(arr)
     for y in range(arr.shape[0]):
         k = y / arr.shape[0]
-        shift = int(math.sin(y / (9 * SS) + 1.3) * (2 + 22 * k) * SS / 2)
-        out_a[y] = np.roll(arr[y], shift)
-        out_a[y] *= 0.55 * (1 - k) ** 1.6
-    # gaps between the ripples' bands
-    bands = (np.sin(np.arange(arr.shape[0]) / (5.5 * SS)) > -0.55).astype(float)[:, None]
-    out_a *= bands
-    refl = tint(Image.fromarray(out_a.clip(0, 255).astype(np.uint8)), cyan)
-    im.alpha_composite(refl, (x0, int(wl * SS + 14 * SS)))
-    # the waterline
-    line(d, [(W / 2 - tw / SS / 2 - 80, wl + 6), (W / 2 + tw / SS / 2 + 80, wl + 6)], cyan + (180,), 4, False)
-    return save(im, out, "ripple_logo.png", opaque=False)
+        shift = int(math.sin(y / (7 * SS) + 0.6) * (1 + 9 * k) * wave * SS / 2)
+        out_a[y] = np.roll(arr[y], shift) * strength * (1 - k) ** fade
+    out_a *= (np.sin(np.arange(arr.shape[0]) / (4.0 * SS)) > -0.75).astype(float)[:, None]
+    return Image.fromarray(out_a.clip(0, 255).astype(np.uint8))
+
+
+def title_logo(out, save_it=True):
+    """PROJECT: DEADWATER, standing on dead-still water: a near-perfect reflection under a waterline."""
+    W, H = 2048, 1024
+    im, d = new(W, H)
+    wl = 610
+    big = fit("black", "DEADWATER", W - 240, 330, 18)
+    m = text_mask("DEADWATER", big, 18)
+    tw, th = m.size
+    x0 = int(W / 2 * SS - tw / 2)
+    im.alpha_composite(tint(m, PALE), (x0, int(wl * SS - th - 10 * SS)))
+    # PROJECT: above, tracked out to the left edge of the word below
+    small = fit("sans", "PROJECT:", tw / SS * 0.42, 96, 30)
+    sm = text_mask("PROJECT:", small, 30)
+    im.alpha_composite(tint(sm, CYAN), (x0 + int(6 * SS), int(wl * SS - th - 10 * SS - sm.size[1] - 34 * SS)))
+    # the reflection and the waterline
+    im.alpha_composite(tint(_still_reflection(m), CYAN), (x0 - PAD_R, int(wl * SS + 12 * SS)))
+    line(d, [(W / 2 - tw / SS / 2 - 60, wl + 4), (W / 2 + tw / SS / 2 + 60, wl + 4)], CYAN + (170,), 4, False)
+    return save(im, out, "title_logo.png", opaque=False) if save_it else finish(im, W, H, False)
+
+
+def boot_splash(out):
+    """The boot splash (shown by the engine before anything loads): the logo on the splash colour."""
+    W, H = 1280, 720
+    im, d = new(W, H, DEEP_BG)
+    logo = title_logo(out, save_it=False).resize((1120 * SS, 560 * SS), Image.LANCZOS)
+    im.alpha_composite(logo, (int((W - 1120) / 2 * SS), int(70 * SS)))
+    tracked(d, W / 2, 610, "CO-OP VR HORROR  ·  DEMO", F("sans", 26), (110, 140, 146), 6)
+    return save(im, out, "splash.png")
+
+
+def app_icon(out):
+    """The app icon (512, shown down to 192 in the Quest library): DEAD over the waterline, WATER
+    sinking under it."""
+    W = 512
+    im, d = new(W, W, (5, 18, 24))
+    tracked(d, W / 2, 92, "PROJECT:", F("sans", 46), CYAN, 10)
+    fnt = fit("black", "WATER", W - 64, 170, 4)
+    top = text_mask("DEAD", fnt, 4)
+    bot = text_mask("WATER", fnt, 4)
+    wl = 300
+    im.alpha_composite(tint(top, PALE), (int(W / 2 * SS - top.size[0] / 2), int(wl * SS - top.size[1] - 16 * SS)))
+    line(d, [(36, wl), (W - 36, wl)], CYAN + (200,), 5, False)
+    # WATER under the surface: rippled, and fading as it goes down
+    arr = np.asarray(bot, float)
+    out_a = np.zeros_like(arr)
+    for y in range(arr.shape[0]):
+        k = y / arr.shape[0]
+        out_a[y] = np.roll(arr[y], int(math.sin(y / (6 * SS)) * (2 + 8 * k) * SS / 2)) * (1 - 0.55 * k)
+    im.alpha_composite(tint(Image.fromarray(out_a.astype(np.uint8)), CYAN), (int(W / 2 * SS - bot.size[0] / 2), int((wl + 22) * SS)))
+    return save(im, out, "icon.png")
 
 
 def menu_header(out):
@@ -323,7 +356,7 @@ def run(out):
     res = [training_sign(out)] + [room_title(out, n) for n in range(1, 8)] + [noise_meter(out)]
     res += [warning_sign(out, k) for k in ("no_diving", "no_running", "staff_only", "deep_water", "no_drinking")]
     res += [equipment_label(out, k) for k in ("generator", "distiller", "charger", "cover")]
-    res += [exit_sign(out), halls_plaque(out), ripple_logo(out), menu_header(out)]
+    res += [exit_sign(out), halls_plaque(out), title_logo(out), menu_header(out), boot_splash(out), app_icon(out)]
     return res
 
 

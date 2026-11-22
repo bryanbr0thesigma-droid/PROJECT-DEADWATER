@@ -11,7 +11,7 @@ credit line (CC BY 4.0).
 | Road-sign people | pamphlets 2, posters 1 and 3, magazine 2, the prohibition signs | [Openclipart 241042](https://openclipart.org/detail/241042) (2016) | rones | Public domain (CC0) |
 | Falling-person warning sign | pamphlet 1 | built from [ISO 7010 W008](https://commons.wikimedia.org/wiki/File:ISO_7010_W008.svg) | after ISO 7010 | Public domain |
 | Water drop | pamphlet 6, the "do not drink" sign | [ISO 7000-0626](https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0626.svg) | after ISO 7000 | CC0 |
-| The Wader (silhouette, and the model itself) | pamphlet 3, poster 1, magazine 3 | rendered from the game's creature model, "The Rake" | Sealife Fan 3 (reworked for RIPPLE) | **CC BY 4.0: credit needed** |
+| The Wader (silhouette, and the model itself) | pamphlet 3, poster 1, magazine 3 | rendered from the game's creature model, "The Rake" | Sealife Fan 3 (reworked for PROJECT: DEADWATER) | **CC BY 4.0: credit needed** |
 
 These come from `../falcon_tape/assets` (see `../falcon_tape/assets/CREDITS.md`).
 
@@ -29,7 +29,7 @@ needed; their licence files are in `fonts/`.
 | Font | Used for | Designer | License |
 |---|---|---|---|
 | Liberation Sans / Serif (system) | most text | Red Hat / Ascender | SIL OFL 1.1 |
-| Inter Black (system) | posters, room titles, RIPPLE logo | Rasmus Andersson | SIL OFL 1.1 |
+| Inter Black (system) | posters, room titles, PROJECT: DEADWATER logo | Rasmus Andersson | SIL OFL 1.1 |
 | FreeMono (system) | small print | GNU FreeFont | GPL with font exception |
 | Pacifico | the Chlora-Cola script | Vernon Adams | SIL OFL 1.1 |
 | Abril Fatface | Floater's coffee, the certificate | TypeTogether | SIL OFL 1.1 |

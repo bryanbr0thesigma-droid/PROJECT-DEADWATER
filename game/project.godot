@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="RIPPLE"
-config/description="RIPPLE co-op test demo: one level, the creature, and every core mechanic."
+config/name="PROJECT: DEADWATER"
+config/description="PROJECT: DEADWATER co-op test demo: one level, the creature, and every core mechanic."
 run/main_scene="res://ui/boot.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 boot_splash/bg_color=Color(0.012, 0.031, 0.039, 1)

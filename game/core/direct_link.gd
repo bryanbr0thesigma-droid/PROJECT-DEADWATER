@@ -65,9 +65,9 @@ func _work() -> Dictionary:
 	if gw and gw.is_valid_gateway():
 		out.found = true
 		for k in PORTS_TRIED:
-			var e := u.add_port_mapping(port + k, port, "RIPPLE playtest", "UDP", LEASE)
+			var e := u.add_port_mapping(port + k, port, "DEADWATER playtest", "UDP", LEASE)
 			if e == UPNP.UPNP_RESULT_ONLY_PERMANENT_LEASE_SUPPORTED:
-				e = u.add_port_mapping(port + k, port, "RIPPLE playtest", "UDP", 0)
+				e = u.add_port_mapping(port + k, port, "DEADWATER playtest", "UDP", 0)
 			if e == UPNP.UPNP_RESULT_SUCCESS:
 				out.mapped = port + k
 				break

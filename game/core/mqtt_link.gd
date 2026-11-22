@@ -95,7 +95,7 @@ func _send_connect() -> void:
 	body.append(4)                                   # protocol level 3.1.1
 	body.append(0x02 | (0xC0 if _user != "" else 0))   # clean session (+ user name and password)
 	body.append_array(_u16(KEEP_ALIVE))
-	body.append_array(_str("ripple-%08x%08x" % [randi(), randi()]))
+	body.append_array(_str("deadwater-%08x%08x" % [randi(), randi()]))
 	if _user != "":
 		body.append_array(_str(_user))
 		body.append_array(_str(_pass))

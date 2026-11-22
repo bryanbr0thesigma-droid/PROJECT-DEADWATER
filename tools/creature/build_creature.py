@@ -1,4 +1,4 @@
-# Build the RIPPLE creature: the crawler's body and limbs with the predator's head and tail.
+# Build the PROJECT: DEADWATER creature: the crawler's body and limbs with the predator's head and tail.
 # The predator parts (head with blind eyes, needle teeth and sound pits, and the tail) come ready-made as
 # parts.obj + parts.json, cut from the predator's rest pose. Run with:
 #   blender -b --python mix_build.py -- <rake.gltf> <parts.obj> <parts.json> <tex dir> <out.glb> [head scale] [tail scale]

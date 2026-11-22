@@ -26,4 +26,4 @@ and screeches, splashes, wading, drips, the room tone and the "Under the surface
 from CC0 recordings. The game's synthesized sounds (clank, door, flashlight) are not used.
 
 The Wader's silhouettes (`../silhouettes/`) are rendered from the game's creature model (The Rake by
-Sealife Fan 3, CC BY 4.0, reworked for RIPPLE).
+Sealife Fan 3, CC BY 4.0, reworked for PROJECT: DEADWATER).

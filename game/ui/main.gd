@@ -1,6 +1,6 @@
 extends Node3D
 ## The title screen: a dark pool hall with the creature slowly wading round the shallow pool, the
-## RIPPLE title, your character on a pedestal, and the menu. In VR you point at the menu with the
+## PROJECT: DEADWATER title, your character on a pedestal, and the menu. In VR you point at the menu with the
 ## right controller; on desktop the menu sits on the left of the screen.
 
 const MenuPanel := preload("res://ui/menu_panel.tscn")
@@ -114,13 +114,13 @@ func _pedestal() -> void:
 
 
 func _title_text() -> void:
-	# The RIPPLE logo (tools/branding), its reflection rippling under it.
+	# The PROJECT: DEADWATER logo (tools/branding), standing on still water.
 	var t := MeshInstance3D.new()
 	var q := QuadMesh.new()
 	q.size = Vector2(6.4, 3.2)
 	t.mesh = q
 	var m := StandardMaterial3D.new()
-	m.albedo_texture = load("res://assets/branding/ripple_logo.png")
+	m.albedo_texture = load("res://assets/branding/title_logo.png")
 	m.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
 	m.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
 	m.albedo_color = Color(0.95, 1.05, 1.1)
