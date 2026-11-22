@@ -2,9 +2,13 @@
 # take into its bursts and clicks, then give them the creature's treatment, the same way the first
 # voice was made (mix_voice.py): lowered for size with a second throat an octave under it, a torn
 # edge, a short tiled echo. Writes one mono WAV per clip, plus the close-up rattle as a seamless loop.
-#   python3 mix_wader_clicks.py <takes dir> <out dir> [A|B]
+#   python3 mix_wader_clicks.py <takes dir> <out dir> [A|B|C|D]
 # Version A stays closer to the voice; B is deeper and less human (part of the vowel flattened out,
-# a fixed throat resonance).
+# a fixed throat resonance), but sounded like a typewriter: the flattening (which made the first
+# voice's throat clicks sound like a printer), the metallic resonance, bright ticks and evenly spaced
+# clicks. C keeps B's depth without those: no flattening or ring, the highs rolled off, each click a
+# little higher or lower and the gaps between them uneven, a detuned second copy. D is C wetter and
+# duller, as if heard through water.
 import glob, os, subprocess, sys
 import numpy as np
 import voice_lib as V
@@ -14,7 +18,10 @@ TAKES, OUT = sys.argv[1:3]
 VERSION = sys.argv[3] if len(sys.argv) > 3 else 'A'
 RAW_TOO = len(sys.argv) > 4            # also write each clip as recorded (for a before/after preview)
 P = dict(A=dict(semis=-4, sub=0.30, flat=0.0, comb=0.0, drv=1.6, wet=0.12),
-         B=dict(semis=-7, sub=0.45, flat=0.4, comb=0.35, drv=2.2, wet=0.15))[VERSION]
+         B=dict(semis=-7, sub=0.45, flat=0.4, comb=0.35, drv=2.2, wet=0.15),
+         C=dict(semis=-7, sub=0.45, flat=0.0, comb=0.0, drv=1.6, wet=0.16, hi=3200, jitter=1, double=0.4),
+         D=dict(semis=-7, sub=0.55, flat=0.0, comb=0.0, drv=1.5, wet=0.22, hi=2300, jitter=1, double=0.45))[VERSION]
+rng = np.random.default_rng(23)
 ROOM = dict(rt_low=1.0, rt_high=0.45)
 
 
@@ -72,7 +79,43 @@ def throat(x, g, delay=0.009):
     return 0.6 * x + 0.4 * y / (np.abs(y).max() + 1e-9) * np.abs(x).max()
 
 
+def click_starts(x):
+    # Where each click in a burst starts (as the booth page finds them).
+    hop = 96; n = len(x) // hop
+    env = np.abs(x[:n * hop]).reshape(n, hop).max(1); peak = env.max()
+    pre = np.concatenate([[0], np.cumsum(env)]); thr = max(peak * 0.16, 0.012); out = []; last = -10 ** 9
+    for i in range(n):
+        lo, hi = max(0, i - 30), max(0, i - 2)
+        bg = (pre[hi] - pre[lo]) / (hi - lo) if hi > lo else 0
+        if env[i] > thr and env[i] > bg * 2.2 and i - last > 20:
+            out.append(i * hop); last = i
+    return out
+
+
+def unevenly(seg):
+    # Undo the machine-gun evenness: every click a little higher or lower and louder or softer, and
+    # the gap after it stretched or squeezed. Pieces overlap by a few ms so nothing clicks at the joins.
+    on = click_starts(seg)
+    if len(on) < 3:
+        return seg
+    bounds = [max(0, on[0] - int(0.004 * SR))] + [o - int(0.004 * SR) for o in on[1:]] + [len(seg)]
+    out = np.zeros(int(len(seg) * 1.5) + SR); pos = 0; xf = int(0.003 * SR)
+    for a, b in zip(bounds[:-1], bounds[1:]):
+        piece = seg[a:b]
+        if len(piece) < 2 * xf:
+            continue
+        piece = pitch(piece, rng.uniform(-1.3, 1.3)) * rng.uniform(0.65, 1.0)
+        w = np.ones(len(piece)); w[:xf] = np.linspace(0, 1, xf); w[-xf:] = np.linspace(1, 0, xf)
+        m = min(len(piece), len(out) - pos); out[pos:pos + m] += (piece * w)[:m]
+        gap = int(len(piece) * rng.uniform(0.72, 1.35))
+        pos += max(gap, 2 * xf) - xf
+    head = seg[:bounds[0]]
+    return np.concatenate([head, out[:pos + int(0.08 * SR)]])
+
+
 def voice(seg):
+    if P.get('jitter'):
+        seg = unevenly(seg)
     # Lowered for size (which also slows it), with a second throat an octave under.
     body = pitch(seg, P['semis'])
     s = body + fit(band(pitch(seg, P['semis'] - 12), hi=700), len(body)) * P['sub']
@@ -82,7 +125,14 @@ def voice(seg):
         s = (1 - P['flat']) * s + P['flat'] * d / (np.abs(d).max() + 1e-9)
     if P['comb']:
         s = throat(s, P['comb'])
-    return drive(band(s, lo=90), P['drv'])
+    if P.get('double'):
+        # A second copy a fraction higher and 17 ms late: thicker and less exact, like two throats.
+        d2 = fit(np.concatenate([np.zeros(int(0.017 * SR)), pitch(s, 0.35)]), len(s))
+        s = s + d2 * P['double']
+    s = drive(band(s, lo=90), P['drv'])
+    if P.get('hi'):
+        s = band(s, hi=P['hi'])              # after the edge, so its harsh top is rolled off too
+    return s
 
 
 def room(s):
