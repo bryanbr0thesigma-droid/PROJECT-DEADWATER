@@ -24,7 +24,7 @@ const ItemScripts := {
 }
 const LobbyScript := preload("res://level/lobby_room.gd")
 const TutorialScript := preload("res://level/tutorial_course.gd")
-const DeepEndScript := preload("res://level/deep_end.gd")
+const HighDiveScript := preload("res://level/high_dive.gd")
 const IN_VCR := -999          # an item's "stowed" value while it's inside the lobby's VCR
 const IN_MACHINE := -998      # ... and while a can is still in the lobby's soda machine
 const TAPES := ["Tape", "Tape08"]
@@ -149,9 +149,9 @@ func _ready() -> void:
 			course.name = "Tutorial"
 			add_child(course)
 			course.build(self)
-		_ when Game.level_map == "deep_end":
-			var deep: Node = DeepEndScript.new()
-			deep.name = "DeepEnd"
+		_ when Game.level_map == "high_dive":
+			var deep: Node = HighDiveScript.new()
+			deep.name = "HighDive"
 			add_child(deep)
 			deep.build(self)
 			_build_navigation()

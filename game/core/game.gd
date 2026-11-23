@@ -13,8 +13,8 @@ var vr_mode := false
 var xr_interface: XRInterface
 var level: Node = null          # the running level (level.gd)
 var level_mode := "game"        # what the next level scene builds: "game", "lobby" or "tutorial"
-var level_map := "halls"        # which level a game is: "halls" (the Shallow Halls) or "deep_end"
-const MAPS := {"halls": "THE SHALLOW HALLS", "deep_end": "THE DEEP END"}
+var level_map := "halls"        # which level a game is: "halls" (the Shallow Halls) or "high_dive" (the High Dive)
+const MAPS := {"halls": "THE SHALLOW HALLS", "high_dive": "THE HIGH DIVE"}
 var use_lobby := false          # hosting from the menu: everyone waits in the lobby first
 var menu_message := ""          # shown on the menu after leaving a game
 var fader: Node3D               # scene changes fade through a loading void (core/scene_fader.gd)

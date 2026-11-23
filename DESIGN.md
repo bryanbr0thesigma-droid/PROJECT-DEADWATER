@@ -285,11 +285,20 @@ sections of the poolrooms.
 
 1. **The shallow halls** — tutorial. Low ledges and shallow water. Teaches climbing,
    jumping, decoys, the lidar and what happens when you fall in.
-2. **The deep end** — diving towers and high ledges over deep water. Falls are huge.
+2. **The high dive** — diving towers and high ledges over deep water, under a vaulted roof.
+   Falls are huge.
 3. **The pump rooms** — machinery for cover noise, lots of generators and powered
    platforms.
 4. **The dark sector** — lights out. Lidar-heavy until you restore power.
-5. **The slides** — water slides, fast movement, the finale.
+5. **The slides** — water slides, fast movement.
+6. **The deep end** — the finale, at the bottom: the architecture breaks apart into an abyss.
+
+**The look changes with depth.** Near the top the poolrooms are bright and open: white tile, open
+sky, narrow water channels. In the middle they're vast vaulted halls with high, warm windows and
+dark arched tunnels. At the bottom the tiles crumble: rooms break into chunks hanging in the dark,
+lit by a single lamp. (Loose inspiration: the look of doctor4t's Neverend; none of its creatures,
+plants or builds.) In the lore, the broken tiles are the scars of F.A.L.C.O.N. forcing its portal
+deeper.
 
 ## Level 1: The Shallow Halls (test level)
 
@@ -316,11 +325,12 @@ in order, so a team learns them by playing.
 - **Co-op moments:** splitting the two canteen trips, one player scanning with the lidar while the
   other carries, throwing a decoy to pull the creature away from a teammate, and handing items over.
 
-## Level 2: The Deep End (in progress)
+## Level 2: The High Dive (in progress)
 
-Built step by step in `game/level/deep_end.gd`. The host picks it on the destination sign on the
-lobby's desk (flip it; the letter board shows where everyone is going), or "Play solo: the Deep
-End" on the Play page. Where the Shallow Halls are about wading quietly, the Deep End is about
+(Called the Deep End until the name moved to the finale.) Built step by step in
+`game/level/high_dive.gd`. The host picks it on the destination sign on the
+lobby's desk (flip it; the letter board shows where everyone is going), or "Play solo: the High
+Dive" on the Play page. Where the Shallow Halls are about wading quietly, the High Dive is about
 height: one tall natatorium over a deep pool you can only swim in, with the Wader crawling along
 the bottom, and every fall into it very loud.
 
@@ -336,6 +346,14 @@ the bottom, and every fall into it very loud.
 | 6 | Diving tower | Platforms at 4 m (where the beam lands), 7.5 m and 10 m, with ladders between them; the key on the top, a diving board over the water. A 1 m landing on its far side to climb out of the water (not up the tower). |
 | 7 | Back | The careful way (ladders, beam, gallery), or dive from 10 m (fast, the loudest thing in the game) and swim for the north ladder, then up to the north gallery (one more gap). |
 | 8 | Exit | The locked door on the north-east gallery; everyone inside ends the level. |
+
+**Pass 2 (the look, started):**
+- A stepped, tiled vault instead of the flat ceiling, rising 6 m above the walls at the middle
+  (one mesh, no collision). The hanging lights hang from it on rods.
+- Nine deep-set high windows along each long wall, glowing warm (a bright somewhere-else outside),
+  with two warm lights.
+- A dark arched tunnel off the north deck, under the gallery. It goes back into the dark and
+  nowhere you need to go.
 
 **Next passes (one at a time, playtested in between):**
 1. A pump room off the north deck: the generator, and the mineral water at the bottom of the deep
