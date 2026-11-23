@@ -3,8 +3,8 @@
 Status: brainstorm. **Canon** marks the creator's own lore. Everything else is a proposal, and
 none of it is in the game yet unless it says so.
 
-**In one line:** A-Tech opened the door. F.A.L.C.O.N. walked through it to make money, and the
-people who find out how don't come back.
+**In one line:** A-Tech opened the door. Dr. Bryant took F.A.L.C.O.N. through it and deeper, to make
+money, and the people who find out how are disposed of. The story is F.A.L.C.O.N.'s.
 
 Tone: a cheerful organisation hiding something rotten. You find out through its own tapes, memos and
 marketing, and its voice never cracks however bad the truth gets.
@@ -16,9 +16,12 @@ marketing, and its voice never cracks however bad the truth gets.
 - **October 17, 1989:** A-Tech uses the **Low-Proximity Magnetic Distortion System** to open a
   portal to the complex.
 - **A-Tech stops at Level 0** (the complex).
-- **June 24, 1990:** A-Tech's co-founder splits off, believing it has untapped potential. He founds
+- **June 24, 1990:** A-Tech's co-founder, **Dr. Bryant**, splits off, believing it has untapped potential. He founds
   **F.A.L.C.O.N.** and **deepens it**, pushing the machine past Level 0 and into the poolrooms.
 - **A-Tech and F.A.L.C.O.N. are separate corporate entities.** Both still exist.
+- **A-Tech doesn't know F.A.L.C.O.N. exists.** F.A.L.C.O.N. knows about A-Tech, loosely: it keeps
+  half an eye on its old partner.
+- **The story focuses on F.A.L.C.O.N.** A-Tech stays in the background.
 
 > **A deliberate nod.** A-Tech, the machine's name, the date and "Level 0" point at a well-known Backrooms
 > series on purpose, so fans make the connection. It's knock-off naming, like the lobby's
@@ -27,8 +30,14 @@ marketing, and its voice never cracks however bad the truth gets.
 
 ## Canon: what happens to people who find out
 
-F.A.L.C.O.N. does something to whoever finds out what it's really doing. They are **not** turned
+Whoever finds out what F.A.L.C.O.N. is really doing is **disposed of**. They are **not** turned
 into Waders.
+
+## Canon: the game turns into an escape
+
+As the players learn the truth, the game starts leaning into two things at once: **surviving** it,
+and **trying to escape your predicament**, getting out from under F.A.L.C.O.N. (Proposal: the turn
+comes at layer 5 of the iceberg below.)
 
 ## Canon: the Wader isn't the only one
 
@@ -76,10 +85,10 @@ one loose for a trial. Cheap to build: the creature model idling far away, or ju
 
 Idea: when your Wader clicks, a group somewhere far off sometimes clicks back.
 
-## Proposed: what happens to people who find out
+## Proposed: how F.A.L.C.O.N. words it
 
-They're "**reassigned to Deep Survey**". In practice they're sent alone into a sealed sector, near
-a group. The paperwork stays polite: "Thank you for volunteering for Deep Survey! Your locker will
+On paper, disposal is "**reassignment to Deep Survey**". In practice they're sent alone into a
+sealed sector, near a group. The paperwork stays polite: "Thank you for volunteering for Deep Survey! Your locker will
 be cleared for the next recruit."
 
 ## Proposed: the iceberg (the deeper you dig, the more you find)
@@ -89,9 +98,9 @@ be cleared for the next recruit."
 | **0. The brochure** (the lobby) | The warm lobby, recruitment posters, a pension plan, Chlora-Cola, caring orientation tapes. | "We keep you safe." |
 | **1. The fine print** (the Shallow Halls, in plain sight) | Sign-in entries with no time out. "Wet footprints? Report them." Grief counselling "for your family". The rules start to protect F.A.L.C.O.N., not you. | Friendly, a little off. |
 | **2. The memos** (the Deep End, staff rooms) | People become numbers: "Team 14: losses 2. Data: excellent." Visitor passes with no names. | "Remember to thank your team for their contribution! 🙂" |
-| **3. The business** (locked rooms, cabinets) | Client contracts ("one visitor, no return"). Trial reports sold to buyers. A sales tape. The A-Tech split, and the co-founder's pitch. | A smiley sticker on an invoice. |
+| **3. The business** (locked rooms, cabinets) | Client contracts ("one visitor, no return"). Trial reports sold to buyers. A sales tape. The A-Tech split, and Dr. Bryant's pitch. F.A.L.C.O.N.'s thin file on A-Tech. | A smiley sticker on an invoice. |
 | **4. Deep Survey** (hidden, hard to reach) | The colony maps and head counts that explain the groups you've glimpsed. Personnel files stamped REASSIGNED. The whistleblower's tapes. | "Thank you for volunteering for Deep Survey!" |
-| **5. The bottom** (only for players who dig hardest) | A reassignment list with **your team on it**: "Training Division team. Flagged: unauthorised access. Reassign after next trial." Now you know, and so do they. | "Congratulations on your assignment." |
+| **5. The bottom** (only for players who dig hardest) | A reassignment list with **your team on it**: "Training Division team. Flagged: unauthorised access. Reassign after next trial." Now you know, and so do they. **From here the goal is to escape.** | "Congratulations on your assignment." |
 
 The rules that make this work:
 
@@ -140,17 +149,17 @@ players can learn:
   - Tape 00, footage of F.A.L.C.O.N.'s first trip through the machine in 1990.
 - **Props:** clipboards, memos, personnel files and client contracts (the named-prop items already
   exist).
-- **Layer 5 has consequences (idea):** once your team has found the reassignment list, the lobby
-  changes a little each round. Your lockers are cleared, and a "Deep Survey" sign-up sheet has
-  your names already filled in.
+- **Layer 5 changes the game (canon direction; details proposed):** once your team has found the
+  reassignment list, the lobby turns on you a little each round. Your lockers are cleared, and a
+  "Deep Survey" sign-up sheet has your names already filled in. Rounds now have two goals: survive
+  the trial, and work towards a way out.
+- **The way out (proposal):** not back through F.A.L.C.O.N.'s station, but *up*: back towards
+  Level 0, where A-Tech's portal still stands. A-Tech doesn't know F.A.L.C.O.N. exists, so
+  arriving at its door is the last thing anyone expects, and the fan connection pays off.
 
 ## Open questions
 
-1. The co-founder's name.
-2. Does A-Tech know what F.A.L.C.O.N. does with its machine? Are they rivals? (Suggestion: A-Tech
-   is the careful, respectable one, still studying Level 0. In-game finds could include A-Tech
-   letters demanding its machine back, and F.A.L.C.O.N. memos laughing them off.)
-3. Does layer 5 change how the game plays, or only the story?
-4. What exactly does F.A.L.C.O.N. do to people who find out? ("Reassigned to Deep Survey" is a
-   proposal.)
-5. Both businesses (disappearances for hire and human trials), one, or something else?
+1. Both businesses (disappearances for hire and human trials), one, or something else?
+2. How does the escape work: a final level, or a goal built up over many rounds? Is A-Tech's portal
+   at Level 0 the way out?
+3. Does Dr. Bryant ever appear (on tape, on the intercom), or only in paperwork?
