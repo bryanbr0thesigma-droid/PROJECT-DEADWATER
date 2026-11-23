@@ -36,6 +36,15 @@ marketing, and its voice never cracks however bad the truth gets.
 ### F.A.L.C.O.N.
 
 - It **found** the poolrooms (through the deepened portal) and is **exploiting** them.
+
+### The secret: F.A.L.C.O.N. is still going deeper
+
+- **Dr. Bryant never stopped deepening.** F.A.L.C.O.N. is pushing further down, towards whatever is
+  at the very bottom, believing it's worth anything.
+- **The recruits are the cost of mapping the way down.** Every "loss" marks a dead end.
+- **The generators the players power each round drive the portal deeper.** Every round, you help
+  dig.
+- **What's at the bottom stays a mystery until the finale.**
 - Whoever finds out what it's really doing is **disposed of**. They are **not** turned into Waders.
 - **Dr. Bryant appears in the game at some point.**
 
@@ -78,7 +87,7 @@ volunteering for Deep Survey! Your locker will be cleared for the next recruit."
 | **0. The brochure** (the lobby) | The warm lobby, recruitment posters, a pension plan, Chlora-Cola, caring orientation tapes. | "We keep you safe." |
 | **1. The fine print** (the Shallow Halls, in plain sight) | Sign-in entries with no time out. "Wet footprints? Report them." Grief counselling "for your family". The rules start to protect F.A.L.C.O.N., not you. | Friendly, a little off. |
 | **2. The memos** (the Deep End, staff rooms) | People become numbers: "Team 14: losses 2. Acceptable." | "Remember to thank your team for their contribution! 🙂" |
-| **3. The project** (locked rooms, cabinets) | What F.A.L.C.O.N. is really exploiting the poolrooms for. The A-Tech split, and Dr. Bryant's pitch. F.A.L.C.O.N.'s thin file on A-Tech. | A smiley sticker on something awful. |
+| **3. The project** (locked rooms, cabinets) | The truth: F.A.L.C.O.N. is still deepening, and the losses are the map (a survey chart with the dead ends marked by names). Where the generators' power really goes. The A-Tech split, and Dr. Bryant's pitch. F.A.L.C.O.N.'s thin file on A-Tech. | A smiley sticker on something awful. |
 | **4. Deep Survey** (hidden, hard to reach) | F.A.L.C.O.N.'s files on the Wader groups. Files stamped REASSIGNED. The whistleblower's tapes. | "Thank you for volunteering for Deep Survey!" |
 | **5. The bottom** (only for players who dig hardest) | A reassignment list with **your team on it**. Now you know, and so do they. **From here, the goal is to escape through F.A.L.C.O.N.'s portal.** | "Congratulations on your assignment." |
 
@@ -127,7 +136,7 @@ mid-sentence.
 
 ## Open questions
 
-1. **What is F.A.L.C.O.N. exploiting the poolrooms for?** This is the core secret (layer 3).
+1. **What is at the bottom?** Kept a mystery until the finale; the creator decides.
 2. How does the escape play out: one final level, or a goal built up over many rounds?
 
 ### Not doing (the creator said no)
