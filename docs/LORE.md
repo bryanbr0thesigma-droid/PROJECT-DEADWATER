@@ -25,8 +25,12 @@ marketing, and its voice never cracks however bad the truth gets.
 
 ## Canon: what happens to people who find out
 
-F.A.L.C.O.N. does something to whoever finds out what it's really doing (it doesn't turn them into
-the Wader). **What's left of them is in areas you'll never access.**
+F.A.L.C.O.N. does something to whoever finds out what it's really doing. They are **not** turned
+into Waders.
+
+## Canon: the Wader isn't the only one
+
+There are more Waders, in **groups**, in areas you'll never access.
 
 ## Proposed: F.A.L.C.O.N. today
 
@@ -44,29 +48,32 @@ the Wader). **What's left of them is in areas you'll never access.**
      picked because nobody will miss them. The ads ("Steady work. Federal pension.") target people
      with no family, and the pension is never paid. Every round is a trial that measures how
      people last against the Wader. The results go to buyers.
-- **The Wader** was already in the poolrooms (Liminal Entity L-7, one of the things in the lobby's
-  field guide, L-1 to L-9). F.A.L.C.O.N. doesn't fight it. The Wader is the trials' test, and its
-  disposal system.
+- **The Waders** were already in the poolrooms (Liminal Entity L-7, one of the things in the lobby's
+  field guide, L-1 to L-9). They live in groups. F.A.L.C.O.N. cuts one off from its group and
+  shuts it in each trial area: the one you face is alone, and it's the trial.
 - **Deadwater**, the glowing mineral water, is just what runs the generators. It isn't the secret.
 
-## Proposed: the Reassigned
+## Proposed: the groups, glimpsed
 
-Whoever finds out is "**reassigned to Deep Survey**". In practice they're sent into a sealed
-sector alone, without the orientation, where the Wader is. The paperwork stays polite: "Thank you
-for volunteering for Deep Survey! Your locker will be cleared for the next recruit."
+Every level gets at least one glimpse of a group of Waders somewhere players can never reach:
 
-Every level gets at least one place with remains you can see but never reach:
+- several tall shapes standing still in a far-off flooded hall, seen through a drain grate;
+- ripples moving together, in step, across an unlit pool behind a locked fence;
+- a lidar scan through a gap in a wall that shows six figures where there should be none;
+- clicking from behind a sealed door: many voices at once, answering each other;
+- through thick observation glass in a sealed staff corridor, a group wading slowly past.
 
-- a hand through a drain grate, under water you can't get to;
-- a torn suit (the same kind the players wear) on a ledge across a gap no one could jump;
-- an ID badge caught on the far side of a locked chain-link fence;
-- a clipboard floating far out in an unlit pool, still readable through the lidar;
-- something behind thick observation glass in a sealed staff corridor;
-- a canteen strap tied to a ladder that goes down into pitch black, with the ladder cut off below.
+They never come closer, and they're never explained on the spot. Later, F.A.L.C.O.N. paperwork
+does: colony maps, head counts ("Sector 9: group of 12. Do not open."), and the method for cutting
+one loose for a trial. Cheap to build: the creature model idling far away, or just the sound.
 
-They're never explained on the spot. Later, a personnel file with the same name and a REASSIGNED
-stamp tells you who that was. The kill effects already leave torn pieces, so these spots can reuse
-them.
+Idea: when your Wader clicks, a group somewhere far off sometimes clicks back.
+
+## Proposed: what happens to people who find out
+
+They're "**reassigned to Deep Survey**". In practice they're sent alone into a sealed sector, near
+a group. The paperwork stays polite: "Thank you for volunteering for Deep Survey! Your locker will
+be cleared for the next recruit."
 
 ## Proposed: the iceberg (the deeper you dig, the more you find)
 
@@ -76,7 +83,7 @@ them.
 | **1. The fine print** (the Shallow Halls, in plain sight) | Sign-in entries with no time out. "Wet footprints? Report them." Grief counselling "for your family". The rules start to protect F.A.L.C.O.N., not you. | Friendly, a little off. |
 | **2. The memos** (the Deep End, staff rooms) | People become numbers: "Team 14: losses 2. Data: excellent." Visitor passes with no names. | "Remember to thank your team for their contribution! 🙂" |
 | **3. The business** (locked rooms, cabinets) | Client contracts ("one visitor, no return"). Trial reports sold to buyers. A sales tape. The A-Tech split, and the co-founder's pitch. | A smiley sticker on an invoice. |
-| **4. The Reassigned** (hidden, hard to reach) | Personnel files stamped REASSIGNED, matching the remains you've glimpsed. The whistleblower's tapes. | "Thank you for volunteering for Deep Survey!" |
+| **4. Deep Survey** (hidden, hard to reach) | The colony maps and head counts that explain the groups you've glimpsed. Personnel files stamped REASSIGNED. The whistleblower's tapes. | "Thank you for volunteering for Deep Survey!" |
 | **5. The bottom** (only for players who dig hardest) | A reassignment list with **your team on it**: "Training Division team. Flagged: unauthorised access. Reassign after next trial." Now you know, and so do they. | "Congratulations on your assignment." |
 
 The rules that make this work:
@@ -92,8 +99,8 @@ The rules that make this work:
 
 **Dr. M. Halloran** (placeholder name) is a F.A.L.C.O.N. scientist who recorded the truth on blank
 VHS tapes and hid them in the levels. Players bring them back to the lobby VCR (which already
-exists). Halloran was reassigned. Players who collect every tape learn where: one of the
-unreachable spots is Halloran's.
+exists). Halloran was reassigned. The last tape is recorded in Deep Survey, and a group can be
+heard clicking closer in the background.
 
 ## Proposed: the Wader's clicks
 
@@ -119,7 +126,7 @@ players can learn:
 
 - **The sign-in book remembers the dead.** When a player dies in a round, their name appears in the
   lobby's register with no time out. Cheap, personal, and a good first piece to build.
-- **The unreachable spots**, at least one per level.
+- **Glimpses of the groups**, at least one per level.
 - **Hidden tapes:** Halloran's, collected in the levels and played in the lobby.
 - **New lobby tapes:**
   - Tape 09, a cheerful pitch to clients;
@@ -139,3 +146,5 @@ players can learn:
 3. Does A-Tech still exist? Does it know what F.A.L.C.O.N. does with its machine?
 4. Both businesses, or one?
 5. Does layer 5 change how the game plays, or only the story?
+6. What exactly does F.A.L.C.O.N. do to people who find out? ("Reassigned to Deep Survey" is a
+   proposal.)
