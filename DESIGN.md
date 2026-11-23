@@ -29,8 +29,8 @@ What makes PROJECT: DEADWATER its own game:
 The poolrooms are a well-known liminal space, and other co-op VR horror games use
 similar spaces. PROJECT: DEADWATER uses its own version of the poolrooms, with no level numbers,
 established lore or terms from those games. The mechanics carry the identity.
-The one exception is a deliberate knock-off nod chosen by the creator: A-Tech and its
-Low-Proximity Magnetic Distortion System (see docs/LORE.md), in the same spirit as the
+The one exception is a deliberate knock-off nod chosen by the creator: A-Tech, its
+Low-Proximity Magnetic Distortion System and "Level 0" (see docs/LORE.md), in the same spirit as the
 lobby's knock-off brands.
 
 PROJECT: DEADWATER is also inspired by an existing poolrooms game with a creature that hears the

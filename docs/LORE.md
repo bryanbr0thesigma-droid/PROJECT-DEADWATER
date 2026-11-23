@@ -15,10 +15,11 @@ marketing, and its voice never cracks however bad the truth gets.
 
 - **October 17, 1989:** A-Tech uses the **Low-Proximity Magnetic Distortion System** to open a
   portal to the complex.
+- **A-Tech stops at Level 0** (the complex).
 - **June 24, 1990:** A-Tech's co-founder splits off, believing it has untapped potential. He founds
-  **F.A.L.C.O.N.** and uses it to enter the poolrooms.
+  **F.A.L.C.O.N.** and **deepens it**, pushing the machine past Level 0 and into the poolrooms.
 
-> **A deliberate nod.** A-Tech, the machine's name and the date point at a well-known Backrooms
+> **A deliberate nod.** A-Tech, the machine's name, the date and "Level 0" point at a well-known Backrooms
 > series on purpose, so fans make the connection. It's knock-off naming, like the lobby's
 > Chlora-Cola: "A-Tech", never the original company's name. Keep it exactly as written; don't
 > "fix" it.
@@ -39,15 +40,20 @@ There are more Waders, in **groups**, in areas you'll never access.
 - **The name is a costume.** "Federal Agency for Liminal Classification & Occult Nature" is a
   private company dressed up as a government agency, so nobody asks questions.
 - **The untapped potential:** the poolrooms are outside every jurisdiction. There's no law, no
-  witnesses and no end, and bodies never turn up. F.A.L.C.O.N. runs the place as a black site,
-  with two businesses:
-  1. **Disappearances for hire.** Clients pay to make people vanish. "Visitors" are escorted in
-     and never sign out. Tape 08-E already says it: *"Personnel who do not sign out are
-     considered still inside."*
-  2. **Human trials.** The "Training Division" is a lab, and its recruits are the subjects,
-     picked because nobody will miss them. The ads ("Steady work. Federal pension.") target people
-     with no family, and the pension is never paid. Every round is a trial that measures how
-     people last against the Wader. The results go to buyers.
+  witnesses and no end, and bodies never turn up. F.A.L.C.O.N. runs the place as a black site.
+
+## Canon: F.A.L.C.O.N.'s two businesses
+
+1. **Disappearances for hire.** Clients pay to make people vanish. "Visitors" are escorted in
+   and never sign out. Tape 08-E already says it: *"Personnel who do not sign out are
+   considered still inside."*
+2. **Human trials.** The "Training Division" is a lab, and its recruits are the subjects,
+   picked because nobody will miss them. The ads ("Steady work. Federal pension.") target people
+   with no family, and the pension is never paid. Every round is a trial that measures how
+   people last against the Wader. The results go to buyers.
+
+## Proposed: the rest of F.A.L.C.O.N.
+
 - **The Waders** were already in the poolrooms (Liminal Entity L-7, one of the things in the lobby's
   field guide, L-1 to L-9). They live in groups. F.A.L.C.O.N. cuts one off from its group and
   shuts it in each trial area: the one you face is alone, and it's the trial.
@@ -139,12 +145,8 @@ players can learn:
 
 ## Open questions
 
-1. Are the poolrooms part of the complex A-Tech opened, or somewhere deeper? Suggestion: A-Tech
-   stopped at the complex, and the co-founder's "untapped potential" was retuning the machine to go
-   further, into the poolrooms.
-2. The co-founder's name.
-3. Does A-Tech still exist? Does it know what F.A.L.C.O.N. does with its machine?
-4. Both businesses, or one?
-5. Does layer 5 change how the game plays, or only the story?
-6. What exactly does F.A.L.C.O.N. do to people who find out? ("Reassigned to Deep Survey" is a
+1. The co-founder's name.
+2. Does A-Tech still exist? Does it know what F.A.L.C.O.N. does with its machine?
+3. Does layer 5 change how the game plays, or only the story?
+4. What exactly does F.A.L.C.O.N. do to people who find out? ("Reassigned to Deep Survey" is a
    proposal.)
