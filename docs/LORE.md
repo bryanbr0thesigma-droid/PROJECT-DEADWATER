@@ -18,6 +18,7 @@ marketing, and its voice never cracks however bad the truth gets.
 - **A-Tech stops at Level 0** (the complex).
 - **June 24, 1990:** A-Tech's co-founder splits off, believing it has untapped potential. He founds
   **F.A.L.C.O.N.** and **deepens it**, pushing the machine past Level 0 and into the poolrooms.
+- **A-Tech and F.A.L.C.O.N. are separate corporate entities.** Both still exist.
 
 > **A deliberate nod.** A-Tech, the machine's name, the date and "Level 0" point at a well-known Backrooms
 > series on purpose, so fans make the connection. It's knock-off naming, like the lobby's
@@ -42,7 +43,7 @@ There are more Waders, in **groups**, in areas you'll never access.
 - **The untapped potential:** the poolrooms are outside every jurisdiction. There's no law, no
   witnesses and no end, and bodies never turn up. F.A.L.C.O.N. runs the place as a black site.
 
-## Canon: F.A.L.C.O.N.'s two businesses
+## Proposed: F.A.L.C.O.N.'s two businesses
 
 1. **Disappearances for hire.** Clients pay to make people vanish. "Visitors" are escorted in
    and never sign out. Tape 08-E already says it: *"Personnel who do not sign out are
@@ -146,7 +147,10 @@ players can learn:
 ## Open questions
 
 1. The co-founder's name.
-2. Does A-Tech still exist? Does it know what F.A.L.C.O.N. does with its machine?
+2. Does A-Tech know what F.A.L.C.O.N. does with its machine? Are they rivals? (Suggestion: A-Tech
+   is the careful, respectable one, still studying Level 0. In-game finds could include A-Tech
+   letters demanding its machine back, and F.A.L.C.O.N. memos laughing them off.)
 3. Does layer 5 change how the game plays, or only the story?
 4. What exactly does F.A.L.C.O.N. do to people who find out? ("Reassigned to Deep Survey" is a
    proposal.)
+5. Both businesses (disappearances for hire and human trials), one, or something else?
