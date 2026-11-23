@@ -15,6 +15,6 @@ If installing over an older build fails, uninstall the old one first.
 Online games connect straight between headsets. If it can't connect, one of your networks may be blocking direct connections (some mobile hotspots and school or work Wi-Fi do).
 
 ### Credits
-All models, sounds and music are by human artists under CC0 or CC BY licences. They're listed in-game (Credits) and in [ASSETS.md](https://github.com/bryanbr0thesigma-droid/RIPPLE_horror/blob/claude/admiring-ride-o5042e/ASSETS.md).
+All models, sounds and music are by human artists under CC0 or CC BY licences. They're listed in-game (Credits) and in [ASSETS.md](https://github.com/bryanbr0thesigma-droid/PROJECT-DEADWATER/blob/claude/admiring-ride-o5042e/ASSETS.md).
 
 <sub>Built from this commit by the "Release demo APK" workflow.</sub>
